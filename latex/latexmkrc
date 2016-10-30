@@ -1,0 +1,9 @@
+$pdf_mode = 1;
+$pdflatex = 'pdflatex -interaction=nonstopmode';
+
+add_cus_dep('uml', 'pdf', 0, 'plantuml');
+sub plantuml {
+   system("plantuml -tpdf \"$_[0].uml\""); }
+
+$cleanup_includes_cusdep_generated = 1;
+$clean_ext = "bbl cb cb2 lox synctex.gz";
