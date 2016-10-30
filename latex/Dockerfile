@@ -1,11 +1,17 @@
-FROM ubuntu:latest
+FROM alpine:edge
 MAINTAINER Mikołaj Chwalisz <m.chwaliszATgmail.com>
 
-RUN apt-get update && apt-get install -y \
-    texlive-full biber latexmk make \
-    graphviz default-jre \
-    p7zip-full wget \
-    && rm -rf /var/lib/apt/lists/*
+RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories
+
+RUN apk update && \
+    apk add texlive-full \
+    texlive-xetex \
+    biber \
+    make \
+    graphviz \
+    openjdk8-jre \
+    p7zip \
+    wget
 
 RUN mkdir /usr/share/plantuml
 RUN wget -O /usr/share/plantuml/plantuml.jar http://sourceforge.net/projects/plantuml/files/plantuml.jar/download
