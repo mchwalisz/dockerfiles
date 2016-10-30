@@ -10,7 +10,7 @@ skinparam defaultFontName FG Virgil
 skinparam shadowing false
 "
 
-java -splash:no -jar $DIR/plantuml.chjar \
+java -splash:no -jar $DIR/plantuml.jar \
     -Shandwritten="true" \
     -Smonochrome="true" \
     -SpackageStyle="rect" \
