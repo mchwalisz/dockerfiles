@@ -2,7 +2,7 @@
 
 DIR="/usr/share/plantuml"
 
-CONFIG="
+UNUSED_CONFIG="
 skinparam handwritten true
 skinparam monochrome true
 skinparam packageStyle rect
@@ -11,9 +11,4 @@ skinparam shadowing false
 "
 
 java -splash:no -jar $DIR/plantuml.jar \
-    -Shandwritten="true" \
-    -Smonochrome="true" \
-    -SpackageStyle="rect" \
-    -SdefaultFontName="FG Virgil" \
-    -Sshadowing="false" \
     "$@"
