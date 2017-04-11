@@ -11,11 +11,11 @@ skinparam shadowing false
 "
 
 java \
-    -splash:no \
-    -cp * net.sourceforge.plantuml.Run \
+    -cp "plant.jar:/usr/share/plantuml/*" \
+    net.sourceforge.plantuml.Run \
     -Shandwritten="true" \
     -Smonochrome="true" \
     -SpackageStyle="rect" \
-    -SdefaultFontName="FG Virgil" \
+    -SdefaultFontName=CMR10 \
     -Sshadowing="false" \
     "$@"
