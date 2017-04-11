@@ -1,7 +1,7 @@
 Useful dockerfiles
 ==================
 
-- latex: Build latex projects in docker environment
+- [latex](https://hub.docker.com/r/mchwalisz/latex/): Build latex projects in docker environment
 
     - Build: `docker build . -t mchwalisz/latex`
     - Run: `docker run -t mchwalisz/latex -v $(pwd):/doc`
