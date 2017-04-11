@@ -2,18 +2,17 @@
 
 DIR="/usr/share/plantuml"
 
-CONFIG="
+UNUSED_CONFIG="
 skinparam handwritten true
 skinparam monochrome true
 skinparam packageStyle rect
-skinparam defaultFontName FG Virgil
+skinparam defaultFontName CMR10
 skinparam shadowing false
 "
 
 java \
     -cp "plant.jar:/usr/share/plantuml/*" \
     net.sourceforge.plantuml.Run \
-    -Shandwritten="true" \
     -Smonochrome="true" \
     -SpackageStyle="rect" \
     -SdefaultFontName=CMR10 \
