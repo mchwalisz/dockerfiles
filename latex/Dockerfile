@@ -21,8 +21,6 @@ RUN mkdir $PLANTUMLDIR
 RUN wget -O $PLANTUMLDIR/plantuml.jar http://sourceforge.net/projects/plantuml/files/plantuml.jar/download
 RUN wget -O $PLANTUMLDIR/batik-bin-1.9.tar.gz http://apache.mirror.digionline.de/xmlgraphics/batik/binaries/batik-bin-1.9.tar.gz
 RUN tar -x -C $PLANTUMLDIR -f $PLANTUMLDIR/batik-bin-1.9.tar.gz
-RUN wget -O $PLANTUMLDIR/batik-bin-1.9.tar.gz http://apache.mirror.digionline.de/xmlgraphics/batik/binaries/batik-bin-1.9.tar.gz
-RUN tar -x -C $PLANTUMLDIR -f $PLANTUMLDIR/batik-bin-1.9.tar.gz
 RUN mv $PLANTUMLDIR/batik-1.9/*.jar $PLANTUMLDIR/
 RUN wget -O $PLANTUMLDIR/fop-2.2-bin.tar.gz http://apache.mirror.digionline.de/xmlgraphics/fop/binaries/fop-2.2-bin.tar.gz
 RUN tar -x -C $PLANTUMLDIR -f $PLANTUMLDIR/fop-2.2-bin.tar.gz
