@@ -5,4 +5,4 @@ Useful dockerfiles
 
     - Build: `docker build . -t mchwalisz/latex`
     - Run: `docker run -t mchwalisz/latex -v $(pwd):/doc`
-    - Run: `docker run -t mchwalisz/latex -v $(pwd):/doc latexmk -f`
+    - Run: `docker run -t mchwalisz/latex -v $(pwd):/doc -v /etc/group:/etc/group:ro -v /etc/passwd:/etc/passwd:ro -user=$USER latexmk -f`
