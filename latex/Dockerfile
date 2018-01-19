@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Mikołaj Chwalisz <m.chwaliszATgmail.com>
 
 RUN apt-get update && apt-get install -y software-properties-common
-RUN add-apt-repository -y ppa:jonathonf/texlive
+RUN add-apt-repository -y ppa:jonathonf/texlive-2017
 RUN apt-get update
 RUN apt-get install -y \
     make \
