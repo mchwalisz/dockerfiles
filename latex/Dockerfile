@@ -8,6 +8,7 @@ RUN apt-get install -y \
     make \
     graphviz \
     default-jre \
+    icc-profiles \
     wget
 RUN apt-get install -y \
     texlive-full \
