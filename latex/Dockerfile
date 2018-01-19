@@ -11,6 +11,7 @@ RUN apt-get install -y \
     wget
 RUN apt-get install -y \
     texlive-full \
+    texlive-latex-extra \
     biber \
     latexmk
 RUN rm -rf /var/lib/apt/lists/*
